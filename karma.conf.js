@@ -17,6 +17,7 @@ module.exports = function(config) {
       'karma-browserify',
       'karma-jasmine',
       'karma-chrome-launcher',
+      'karma-firefox-launcher',
       'karma-jasmine-html-reporter'
     ],
 
@@ -25,7 +26,7 @@ module.exports = function(config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
+    browsers: ['Chrome', 'Firefox'],
     singleRun: false,
     concurrency: Infinity
   })
